@@ -1,62 +1,4 @@
-
-import './App.css';
-
-export default function App() {
-  
-  const users = [
-    { name: "Home", 
-      pic: "https://upload.wikimedia.org/wikipedia/en/3/36/Home_%282021_film%29.jpg",
-      rating: "9/10",
-      // summary: " Oliver Twist (Indrans) wants to be tech-savvy and become a better companion to his two sons who spend more time on their phones than with their loved ones."
-  },
-    { name: "Shershaah",
-      pic: "http://www.fridaynirvana.com/film/wp-content/uploads/2021/08/Shershaah-Movie-Review.jpg",
-      rating: "8.7/10",
-      // summary: "Based on the life of Captain Vikram Batra who was an officer of the Indian Army, posthumously awarded with the Param Vir Chakra, India's highest and most prestigious award for valour, for his actions during the 1999 Kargil War in Kashmir between India and Pakistan. "
-  },
-    { name: "sarpatta",
-      pic: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxahkxswWQLCxMvZYI2OcdwfuaC6T6iXTEtw&usqp=CAU",
-      rating: "8.7/10"
-  },
-    { name: "Drishyam 2",
-      pic: "https://upload.wikimedia.org/wikipedia/en/thumb/3/3f/Drishyam_2.jpg/330px-Drishyam_2.jpg",
-      rating: "8.6/10"
-},
-
-{ name: "Karnan",
-  pic: "https://upload.wikimedia.org/wikipedia/en/6/62/Karnan_2021_poster.jpg",
-  rating: "8.3/10"
-},
-{ name: "Malik",
-  pic: "https://upload.wikimedia.org/wikipedia/en/e/e3/Malik_film_poster.jpg",
-  rating: "8.2/10"
-}
-  ];
-
-
-    return(
-    <div className = "App">
-      {users.map((ur) => ( <Msg name={ur.name} pic= {ur.pic} rating = {ur.rating}/>
-      ))}
-    </div>
-  );
-}
-
-function Msg({name, pic, rating}){
-  return(
-    <div>
-      <img className = "user-pic" src={pic} alt={name}/>
-      <h1 className = "user-name"> {name}</h1>
-      <h1 className = "user-rating">{rating}</h1>
-      {/* <h1 className = "user-summary">{Summary}</h1> */}
-    </div>
-  );
-}
-
-
-
-
-
+// import './App.css';
 
 // export default function App() {
 //   // const names = ["thaarik", "john", "surya", "bala"];
@@ -93,3 +35,18 @@ function Msg({name, pic, rating}){
 //   );
 // }
 
+// App.css part below:
+
+// .App {
+//     text-align: center;
+//   }
+//   .user-name{
+//     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+//   }
+  
+//   .user-pic{
+//     object-fit: cover;
+//     border-radius: 50%;
+//     height: 250px;
+//     width: 250px;
+//   }
