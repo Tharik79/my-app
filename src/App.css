@@ -1,13 +1,46 @@
 .App {
-  text-align: center;
+  
+ }
+.movie-container{
+  /* background-color: aqua; */
+  width: 350px;
+  margin-left: 20px;
+  border-radius: 5px;
+  box-shadow: cadetblue;
 }
-.user-name{
+.movie-name{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 24px;
 }
 
-.user-pic{
+.movie-pic{
   object-fit: cover;
-  border-radius: 50%;
-  height: 250px;
-  width: 250px;
+   border-radius: 20%; 
+  height: 400px;
+  width: 350px;
+}
+.movie-summary{
+  margin-top: 0px;
+  font-family: 'Caveat', cursive;
+  font-size: 18px;
+
+  
+}
+.movie-specs{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.movie-rating{
+  font-size: 18px;
+}
+.body{
+   margin-left: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+.movie-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
